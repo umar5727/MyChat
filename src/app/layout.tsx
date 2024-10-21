@@ -8,6 +8,7 @@ import nextimg from '../../public/next.svg'
 import List from "./components/List";
 import LeftSide from "./components/LeftSide";
 import LeftNav from "./components/LeftNav";
+import ContextProvider from "./hooks/context/provider/ContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex min-h-screen">
-          <LeftNav />
-          {/* left side ends  */}
-          {/* content starts  */}
-          <section className="grow">
-            {children}
-          </section>
-        </main>
+        <ContextProvider>
+
+          <main className="flex min-h-screen">
+            <LeftNav />
+            {/* left side ends  */}
+            {/* content starts  */}
+            <section className="grow">
+              {children}
+            </section>
+          </main>
+        </ContextProvider>
 
       </body>
     </html>

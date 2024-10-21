@@ -26,7 +26,7 @@ const LeftNav = () => {
   ]
   return (
     <div className='flex flex-col gap-2 items-center bg-gray-800 p-2'>
-      <div className='bg-primary p-3 rounded-md w-fit '>
+      <div className='bg-gray-700 p-3 rounded-md w-fit '>
         <FontAwesomeIcon icon={faUser} className='w-4' />
       </div>
       {

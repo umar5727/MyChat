@@ -1,4 +1,4 @@
-import MainContent from "./components/main.tsx/MainContent";
+import MainContent from "./components/main/MainContent";
 import Login from "./pages/auth/Login";
 
 // home 
